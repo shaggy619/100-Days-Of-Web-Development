@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4th Day</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS 1.css" />
+  </head>
+  <body>
+    <h1>4th Days of Web Development</h1>
+    <h3>What We Learn</h3>
+    <ul>
+      <li>Styling the anchor element with Pseudo Hover</li>
+      <li>Storing CSS in external file</li>
+      <li>Network tab</li>
+      <li>ID selector</li>
+      <li>Working with font-size and pixel</li>
+      <li>Using other fonts from Google Fonts</li>
+      <li>Dispaying code in webpage</li>
+    </ul>
+    <h2>Styling The Anchor Element With Pseudo Hover:</h2>
+    <p>
+      We can style the anchor element/link with various CSS properties. For
+      example:<br />
+      <a href="https://www.google.com/">Click to open Google</a> <br />
+      In this example we have used various properties for anchor tag. <br />
+      We have given color to the anchor tag using <i>color</i> property and we
+      have removed the underline in the link by setting
+      <i>text-decoration</i> property to none. <br />
+      We have also changed the behaviour of the link when a mouse is hovered on
+      it. We have set the color to sky blue when a mouse is hovered on it.
+      <br />
+      For this we have used <i>a: hover</i> property. <br />
+      Example: <br />
+      <pre> <code>
+      a:hover {
+      color: #02fff2;
+      }</code></pre>
+    </p>
+    <h2>Storing CSS in External File</h2>
+    <p>Basically most of the time we store CSS code in external file and link it in the HTML header section.<br>
+    To use a external css file in the HTML document create a <i>.css</i> file and save it. Then use the code;<br>
+    <pre><code>&lt;link rel="stylesheet" type="text/css" href="demo.css" /&gt;</code></pre>
+    in head section of HTML document.</p>
+    <h2>Network Tab</h2>
+    <p>Network Tab is used to monitor the Network requests and to check how does your page load if you have slower or faster connection.
+    You can open Network Tab by right clicking on any blank space on webpage and then clicking on "Inspect" option from menu and select "Network" Tab.
+    </p>
+    <h2>ID Selector</h2>
+    <p id="demo-id">We can select a single HTML element and change its properties with <i>id </i> tag.
+    To use id tag we have to give a unique name. Then we can declare it in any of the HTML element.
+    For example:
+    <pre><code>&lt;p id="demo-id"&gt;</code></pre>
+    In the above example we have given id named "demo-id" to p element with id tag. <br>
+    We can then change properites of ID using hastag "#" followed by the id name.
+    <pre><code>
+      #demo-id {
+      color: #02fff2;
+      }
+    </code></pre></p>
+    <h2>Working With Font-Size and Pixel:</h2>
+    <p>We can set the different weight of the font and size of the font with <i>font-weight</i> and <i>font-size</i> property.</p>
+    <h2>Using Other Fonts from Google Fonts:</h2>
+    <p>We can import and use other imported fonts from the internet. We can simply search for the fonts in "Google Fonts",
+      select the font and then copy the fonts link provided by the Google fonts in the right bar and paste it in the head section of HTML document.
+    <pre><code>&lt;link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/&gt;</code></pre>
+    We have imported and used Open-sans in the above example. </p>
+    <h2>Displaying Code in Webpage:</h2>
+    <p>Sometimes we need to display code in Webpage for this we use: <br>
+    a. &lt;pre&gt; tag: to output code as a plain text not as HTML code. Whitespace is also prevented and not ignored. <br>
+    b. To simply add "&lt;" or "&gt;" code we use: <br>
+    i) & + lt + ; (Less Than) <br>
+    ii) & + gt + ; (Greater than) <br>
+    <p id="note"><i>Note: </i>Remove "+" sign and whitespace.</p>
+    </p>
+  </body>
+</html>

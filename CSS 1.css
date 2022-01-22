@@ -1,0 +1,28 @@
+body {
+  font-family: "Open Sans";
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #f9004d;
+}
+a:hover {
+  color: #02fff2;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+h2 {
+  color: #0ba51f;
+}
+#demo-id {
+  color: #02fff2;
+}
+#note {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #686868;
+}
