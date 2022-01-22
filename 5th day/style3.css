@@ -1,0 +1,18 @@
+body {
+  background-color: #222831;
+  color: #ffffff;
+  margin: 70px;
+  font-family: "Poppins";
+}
+h1 {
+  text-align: center;
+  color: #fc9d0e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: "Roboto Slab";
+  color: #19d3da;
+}
+pre {
+  font-size: 16px;
+}

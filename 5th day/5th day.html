@@ -5,6 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 5</title>
+    <link rel="stylesheet" type="text/css" href="style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1>5th Day Of Web Development</h1>
+    <h3>What we learn:</h3>
+    <ul>
+      <li>Adding an Image</li>
+      <li>Styling the Image</li>
+      <li>Styling the Overall Page Background</li>
+      <li>Adding a second HTML file</li>
+      <li>Organizing source files in folders</li>
+    </ul>
+    <h2>Adding an Image</h2>
+    <p>
+      We can add image to our HTML document by using <i>img</i> tag.
+      <pre><code>&lt;img src="day5.png" alt="Icon of 5th day"&gt;</code></pre>
+      The address of the image is defined by "src" property and "alt" is used to
+      display the text if image loading is failed in HTML page.
+    </p>
+    <h2>Styling the Image</h2>
+    <p>
+      We can use various properties of CSS to style an image. We can set the
+      width and height of the images with <i>width</i> and
+      <i>height</i> property. We can also use <i>border-radius</i> property to
+      change the borders of an Image. Setting <i>border-radius</i> property to
+      100% results in changing the shape of the image to circle. You can change
+      the value of <i>border-radius</i> to different percentage and play around.
+      <pre><code>
+      img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      }
+      </code></pre>
+    </p>
+    <h2>Styling the Overall Page Background</h2>
+    <p>
+      We can also change the color and background color of our whole HTML page using
+      <i>background-color</i> property in CSS file. We can also give value to
+      <i>margin</i> property in CSS file which will add spacing to the top,
+      right, bottom and left side of the Webpage.
+      <pre><code>
+      body {
+      background-color: #222831;
+      color: #ffffff;
+      margin: 70px;
+      }
+      </code></pre>
+    </p>
+    <h2>Adding a Second HTML File</h2>
+    <p>
+      We can also add our other HTML Files in our HTML document. We can add
+      using anchor tag same as adding the link which we have previously done in
+      our course.
+      <pre><code>&lt;a href="D:\Demo Project\1st day\1st day.html"&gt;
+      </code></pre>
+    </p>
+    <h2>Organizing Source Files in Folders</h2>
+    <p>
+      We can create different folders in our HTML document to manage our source
+      file and differentiate each file easily. In our case we have created
+      different folders according to different day which will easily help to
+      find out which course was completed on which day.
+    </p>
+  </body>
 </html>
