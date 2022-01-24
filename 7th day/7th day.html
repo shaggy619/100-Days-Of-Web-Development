@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style7.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>7th Day of Web Development</h1>
+    <h3>What We Learn:</h3>
+    <ul>
+      <li>Introduction to Box Model</li>
+      <li>Using Box Model</li>
+      <li>Creating HTML Layouts</li>
+      <li>Core Selector</li>
+      <li>Combinators</li>
+      <li>Block vs. Inline elements</li>
+      <h2>Introduction to Box Model</h2>
+      <p>
+        The box model is used while designing the HTML page. It is basically a
+        box that wraps all the contents around it. It consists of margins,
+        padding, border and the content.
+      </p>
+      <img src="box model.png" alt="Figure of CSS box model" />
+      <h2>Using Box Model</h2>
+      <p>
+        We can use Box Model to set different margins, paddings and border to
+        the page. We have previously used margin in our previous course so today
+        we are going to work with padding and border. Adding padding is similar 
+        to that of margin and to add border we have to give first value as its 
+        width, second value of its type and third value of its color.
+        <pre><code>
+            a {
+                border: 1px solid #ffffff;
+            }
+        </code></pre>
+      </p>
+      <ul>
+        <li class="style1"><a href="#">No padding</a></li>
+        <li class="style1"><a href="#" id="padding1">Padding</a></li>
+        <li class="style1"><a href="#" id="paddingborder">Border</a></li>
+      </ul>
+      <h2>Creating HTML Layouts</h2>
+      <p>It is not a must need but a better practice to add different section in HTML page.
+          It makes easier to differentiate between the contents for ourselves as the code gets
+          long and for other developers who will see our code too. Basically we use <i>header,
+          main </i>and <i>footer</i> in todays course.
+      </p>
+      <h2>Core Selector</h2>
+      <p>We have previously discuss about some of the basic selectore like element selector
+         and id selector. Today we are going to learn about few more selectors which are <i>
+         Group selector </i> and <i>Class selector</i>. To use group selector can select two or more elements 
+         and set same style to both of the elements by simply using commas between them.
+         <pre><code>
+             h3, p {
+                 color: #ffffff;
+             }
+         </code></pre>
+         This will set the color of h3 and p white. <br>
+         To add class selector we can simply assign a class to an HTML element and style it
+         according to our choice. Inorder to style a class we have to give dot(.) sign 
+         followed by the class name in CSS file.
+        <code><pre>
+            HTML: &lt;li class="style1">&lt;a href="#"&gt;No padding&lt/a&gt;&lt;/li&gt;
+            CSS:
+            .style1 {
+                list-style-type: none;
+                margin-bottom: 25px;
+            }
+         </pre></code>
+      </p>
+      <h2>Combinators</h2>
+      <p>Combinators are the group of selectors. We have used <i>Descendant combinator</i>
+         and <i>Child combinator</i>. In descendant combinator we select element as:
+         <pre><code>
+             li p {
+                 color: #ffffff;
+             }
+         </code></pre>
+         Here all p with li as ancestor are selected.<br>
+         In child combinator we select element as:
+         <pre><code>
+             h2 > p {
+                 color: #ffffff;
+             }
+         </code></pre>
+         Here only p which are direct children of h2 are selected.
+      </p>
+      <h2>Block vs. Inline elements</h2>
+      <p>The elements which form new line and takes the full width of
+          webpage are called block elements. For eg: p, h1, li etc.<br>
+          The elements which doesn't form new line and only use spaces
+          needed for element are called inline elements. For eg: a, img,
+          span etc.
+      </p>
+  </body>
+</html>
