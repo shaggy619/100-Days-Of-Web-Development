@@ -1,18 +1,19 @@
 body {
-  background-color: #f9dbff;
+  background-color: #fcefff;
   font-family: sans-serif;
 }
 header {
   text-align: center;
-  padding-top: 30px;
 }
 h1 {
   font-family: "Roboto";
   color: #6f00ff;
   font-size: 50px;
+  padding-top: 15px;
 }
 img {
   width: 250px;
+  margin: -30px 0px;
 }
 main {
   background-color: #8400ff;
@@ -30,27 +31,24 @@ ul {
 li {
   padding-left: 15px;
   margin: 8px;
-  border-left: 4px solid transparent;
-}
-.important {
   border-left: 4px solid #ffae00;
   color: #fff38c;
 }
 main p {
   padding-left: 15px;
+  margin: 8px;
   color: #ffffff;
   border-left: 4px solid transparent;
 }
 main a {
   text-decoration: none;
-  background-color: #fdffa4;
-  color: #444444;
-  padding: 4px;
-  border-radius: 2px;
+  color: #fdaf06;
+  font-weight: bold;
 }
 main a:hover,
 main a:active {
-  background-color: #ffec41;
+  color: #ffffff;
+  text-decoration: underline;
 }
 footer {
   text-align: center;
@@ -73,4 +71,18 @@ footer p {
   padding: 7px 0px;
   font-size: 16px;
   color: #6b6b6b;
+}
+#title {
+  font-size: 30px;
+  box-shadow: 4px 4px 20px rgb(27, 27, 27);
+  text-align: center;
+  padding: 5px;
+}
+#note {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #cecdcd;
+}
+code {
+  font-size: 15px;
 }
