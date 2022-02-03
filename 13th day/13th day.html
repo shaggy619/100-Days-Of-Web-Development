@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 13</title>
+    <link
+      rel="icon"
+      href="../11th day/Favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../11th day/style11.css" type="text/css" />
+    <link rel="stylesheet" href="style13.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>13th Day of Web Development</h1>
+      <img
+        src="13th day.png"
+        alt="Laptop screen with text '11th Day of Web Development'"
+      />
+    </header>
+    <main>
+      <h2 id="title">Today's Summary</h2>
+      <h2>Git Local Basic Commands</h2>
+      <ul>
+        <p>
+          When we have Git installed in our machine, we need to have knowlege of
+          basic git commands that help to easily organize our file. All these
+          commands are typed on Command Prompt. Select a direcotry where you
+          want to store your project files and folders and then apply all the
+          commands.
+        </p>
+        <li>Set user email:</li>
+        <p>
+          Inorder to use git you must include your email. To set our custom
+          email address we use command:
+          <br />
+          <span class="command"
+            >git config --global user.email "name@gmail.com"</span
+          >
+        </p>
+        <li>Set user name:</li>
+        <p>
+          We also have to set our user name. To set our username, we use
+          command:
+          <br />
+          <span class="command">git config --global user.name "name"</span>
+        </p>
+        <li>git init</li>
+        <p>
+          After installation of Git in our machine we need to type "git init"
+          command which help to turn all the directories into git repository.
+          <br />
+          <span class="command">git init</span>
+        </p>
+        <li>Check status:</li>
+        <p>
+          We can check the status of the file, either the file is tracked or
+          untracked. Tracked files are those files which are added/published to
+          the git and untracked files are those files which are not
+          added/published to the git. To check git status we use command:
+          <br />
+          <span class="command">git status</span>
+        </p>
+        <li>Add Git</li>
+        <p>
+          We have to add our file to git so that the git recognizes it. To add a
+          file we should use command:
+          <br />
+          To add single file: <br />
+          <span class="command">git add filename</span> <br />
+          To add all untracked files: <br />
+          <span class="command">git add .</span>
+        </p>
+        <li>Git Commit</li>
+        <p>
+          To keep track of what have been change we should commit our file. To
+          commit we use commit -m command and write the message what have been
+          changed in the previous file.
+          <br />
+          <span class="command">git commit -m "Description"</span>
+        </p>
+        <li>Git Log</li>
+        <p>
+          We can view our commit history using git log command.
+          <br />
+          <span class="command">git log</span>
+        </p>
+        <li>Git Checkout</li>
+        <p>
+          We simply delete untracked changes in the files using command git
+          checkout.
+          <br />
+          <span class="command">git checkout .</span>
+        </p>
+        <li>Git Reset</li>
+        <p>
+          We can delete our previous commit in tracked file using command git
+          reset.
+          <br />
+          <span class="command">git reset file1.txt</span>
+        </p>
+      </ul>
+      <h2>Git and Github Basic Commands</h2>
+      <li>Linking git and github</li>
+      <p>
+        To publish our code to github, we must link our git to our github
+        repository. To link our git to our github repository we use the command
+        "git remote add origin" followed by our repository link and add ".git"
+        at the end.
+        <br />
+        <span class="command"
+          >git remote add origin
+          https://github.com/shaggy619/100-Days-Of-Web-Development.git</span
+        >
+      </p>
+      <li>Publishing our files to Github</li>
+      <p>
+        To publish our files to Github, we need to write command "git push
+        origin master". At the first time of using this command, you will be
+        asked to fill up your github email and password and from the next time
+        you won't need it.
+        <br />
+        <span class="command">git push origin master</span>
+      </p>
+      <li>Load Files to Local Computer</li>
+      <p>
+        There may also be some situation where you mistakely delete published
+        files on your computer or you want to load the files on another
+        computer, then you can simply do it using command "git clone" followed
+        by the link of your repository.
+        <br />
+        <span class="command"
+          >git clone
+          https://github.com/shaggy619/100-Days-Of-Web-Development</span
+        >
+      </p>
+    </main>
+    <footer>
+      <a href="https://github.com/shaggy619/100-Days-Of-Web-Development"
+        >Explore the Challange</a
+      >
+      <p>©Shaggy</p>
+    </footer>
+  </body>
+</html>
