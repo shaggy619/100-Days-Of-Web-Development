@@ -1,0 +1,9 @@
+code {
+  color: #d8d7d7;
+}
+#bullet li {
+  list-style-type: disc;
+  color: #ffffff;
+  border: none;
+  margin-left: 22px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12</title>
+    <link
+      rel="icon"
+      href="../11th day/Favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../11th day/style11.css" type="text/css" />
+    <link rel="stylesheet" href="style15.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>15th Day of Web Development</h1>
+      <img
+        src="15th day.png"
+        alt="Laptop screen with text '15th Day of Web Development'"
+      />
+    </header>
+    <main>
+      <h2 id="title">What We Learn</h2>
+      <section>
+        <h2>More about HTML Layout and Positioning</h2>
+        <h2>HTML Tags:</h2>
+        <ul>
+          <li>&lt;nav&gt;</li>
+          <p>
+            Previously we have learnt about some of the tags like
+            &lt;header&gt;, &lt;main&gt; and &lt;footer&gt;. Today we learnt
+            about new tag &lt;nav&gt; tag which is a container that contains
+            navigation links to the next page.
+          </p>
+        </ul>
+      </section>
+      <section>
+        <h2>CSS Properties:</h2>
+        <ul>
+          <li>text-transform</li>
+          <p>
+            "text-transform" property helps to change the letters of HTML
+            elements to either all Uppercase or all Lowercase. <br />
+            <code>text-transform: Uppercase;</code>
+          </p>
+          <li>text-shadow</li>
+          <p>
+            We have previously discussed about <i>box-shadow</i> property.
+            "text-shadow" is similar to that box-shadow property but as the name
+            indicates that box-shadow property was applied for box, whereas
+            text-shadow property can be applied on text. Same as box-shadow it
+            has four values the first one is offset along x-axis, second one is
+            offset along y-axis, third one is blur amount and the fourth one is
+            the color. <br />
+            <code>text-shadow: 1px 1px 1px red;</code>
+          </p>
+        </ul>
+        <h2>CSS Flexbox</h2>
+        <p>
+          CSS Flexbox is introduced to position html elements more easily and
+          accurately. It is basically a container that helps to position
+          elements. An area of document laid out using flexbox is called flex
+          container. To create a flex container, we set the value of area's
+          container display property to flex or inline-flex. As soon as we do
+          this the direct children of that container becomes flex items. After
+          doing this now we can use different flex Properties. <br />
+          <code>display:flex;</code>
+        </p>
+        <ul>
+          <li>flex-direction</li>
+          <p>
+            The flex direction property defines in which direction the flex
+            items are needed to be placed. This property can have one of the
+            four different values either row or column or column-inverse or
+            row-inverse. <br />
+            <code>flex-direction: row; </code>
+          </p>
+          <li>flex-wrap</li>
+          <p>
+            It defines whether the flex items are forced in a single line or can
+            be flowed into multiple lines. The flex-wrap property accepts two
+            different values:
+            <ul id="bullet">
+            <li>
+              nowrap (default): single-line which may cause the container to
+              overflow
+            </li>
+            <li>
+              wrap: multi-lines, direction is defined by flex-direction
+            </li>
+            </ul>
+          </p>
+          <p>
+            <code>flex-wrap: nowrap;</code>
+          </p>
+          <li>flex-flow</li>
+          <p>
+            It contains the combined properties of flex-direction and flex-wrap.
+            We can set two different values at a time with flex-flow.<br />
+           <code>flex-flow: row nowrap;</code>
+          </p>
+          <li>align-items</li>
+          <p>
+            We have previously discussed about <i>text-align</i> property.
+            The text-align property was used to align the text, whereas the
+            align-items is used to align items within a container. <br>
+            <code>align-items: center;</code>
+          </p>
+          <li>justify content</li>
+          <p>
+            The CSS justify-content property defines how the browser distributes
+            space between and around content items along the main-axis of a flex
+            container, and the inline axis of a grid container. We can set different
+            values for this property but basically we use space-between or
+            space-around or space-evenly or center. <br>
+            <code>justify-content: space-between;</code>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/shaggy619/100-Days-Of-Web-Development"
+        >Explore the Challange</a
+      >
+      <p>©Shaggy</p>
+    </footer>
+  </body>
+</html>
