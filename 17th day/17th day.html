@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 17</title>
+    <link
+      rel="icon"
+      href="../11th day/Favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../11th day/style11.css" type="text/css" />
+    <link rel="stylesheet" href="../15th day/style15.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>17th Day of Web Development</h1>
+      <img
+        src="17th day.png"
+        alt="Laptop screen with text '17th Day of Web Development'"
+      />
+    </header>
+    <main>
+      <h2 id="title">Todays Summary</h2>
+      <h2>What We Learn:</h2>
+      <p>
+        We mostly practised the previous concepts which we have already known in
+        our previous course and put them in our project. We learn some few CSS
+        properties like using percentage, box-sizing property and object-fit property.
+      </p>
+      <ul>
+        <li>Using percentage value</li>
+        <p>
+          We have previously mostly use pixels <i>px</i> value for CSS
+          properties but there might be some cases where we want to use
+          percentage value for CSS properties. If we want to use some element to
+          cover certain percentage of the page then we use percentage value.
+          <br />
+          <code>width: 100%</code>
+        </p>
+        <li>box-sizing</li>
+        <p>
+          We can use box-sizing property in CSS to determine wheter we want to
+          cover the entire HTML content or border content. We can set box-sizing
+          value to "content-box" if we want to cover HTML content and we can use
+          the value "border-box" if we want to cover the border content. <br />
+          <code>box-sizing: border-box;</code>
+        </p>
+        <li>object-fit</li>
+        <p>
+          The object-fit CSS property sets how the content of a replaced
+          element, such as img or video, should be resized to fit its container.
+          It basically have three value either fill or contain or cover.
+          <ul id="bullet">
+            <li>fill: </li>
+            <p class="para">The replaced content is sized to fill the element’s content box.
+              The entire object will completely fill the box. If the object's
+              aspect ratio does not match the aspect ratio of its box, then the
+              object will be stretched to fit.</p>
+              <li>contain: </li>
+            <p class="para">The replaced content is scaled to maintain its aspect ratio while
+              fitting within the element’s content box. The entire object is made to fill the box,
+              while preserving its aspect ratio, so the object will be "letterboxed" if its 
+              spect ratio does not match the aspect ratio of the box.</p>
+            <li>cover: </li>
+            <p class="para">The replaced content is sized to maintain its aspect ratio while
+              filling the element’s entire content box. If the object's aspect ratio does not
+              match the aspect ratio of its box, then the object will be clipped to fit.</p>
+          </ul>
+        </p>
+      </ul>
+    </main>
+    <footer>
+      <a href="https://github.com/shaggy619/100-Days-Of-Web-Development"
+        >Explore the Challange</a
+      >
+      <p>©Shaggy</p>
+    </footer>
+  </body>
+</html>
