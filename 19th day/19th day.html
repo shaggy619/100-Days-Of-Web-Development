@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 19</title>
+    <link
+      rel="icon"
+      href="../11th day/Favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../11th day/style11.css" type="text/css" />
+    <link rel="stylesheet" href="../15th day/style15.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>19th Day of Web Development</h1>
+      <img
+        src="19th day.png"
+        alt="Laptop screen with text '19th Day of Web Development'"
+      />
+    </header>
+    <main>
+      <h2 id="title">Today's Summary</h2>
+      <h2>What We Learn:</h2>
+      <p>
+        We have finally finished designing places.html page and have completed
+        our <a href="../18th day/Project/index.html">Project</a>. We have used
+        different HTML tags and CSS properties which we have learn in our
+        previous course. We have also learnt few new concepts of Grid properties
+        and nth-type selector.
+      </p>
+      <h2>Grid Property</h2>
+      <p>
+        Grid property is similar to that of flex property. Flexbox is preferred
+        in one dimensions whereas Grid is preferred in two dimensions. To create
+        a grid container, we set the value of area's container display property
+        to grid.
+        <br />
+        <code>display: grid;</code>
+      </p>
+      <ul>
+        <li>grid-template-columns:</li>
+        <p>
+          The <i>grid-template-columns</i> property specifies the number (and
+          the widths) of columns in a grid layout. The values are a space
+          separated list, where each value specifies the size of the respective
+          column. We can use either pixels or fraction unit to assign value of
+          grid-template-columns property. But typically when we use
+          grid-template-columns, we use fractions unit for value.
+          <br />
+          <code>grid-template-columns: 1fr 1fr;</code>
+        </p>
+        <li>gap:</li>
+        <p>
+          The gap property is used to specify the gap/distance between the
+          elements. The first value specifies the space between rows and second
+          value specifies the space between the columns. <br />
+          <code>gap: 100px 200px;</code>
+        </p>
+        <li>nth-type selector:</li>
+        <p>
+          The <i>:nth-of-type(n)</i> selector is used to select any list items
+          according to their number. We have to give the value of the position
+          of the list item which is needed to be selected.
+        </p>
+      </ul>
+    </main>
+    <footer>
+      <a href="https://github.com/shaggy619/100-Days-Of-Web-Development"
+        >Explore the Challange</a
+      >
+      <p>©Shaggy</p>
+    </footer>
+  </body>
+</html>

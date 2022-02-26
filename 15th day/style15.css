@@ -7,3 +7,10 @@ code {
   border: none;
   margin-left: 22px;
 }
+.para {
+  margin-left: 22px;
+}
+#bullet code {
+  margin-left: 20px;
+  color: #d8d7d7;
+}

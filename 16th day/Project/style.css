@@ -29,6 +29,9 @@ header li a {
   color: black;
   padding-right: 40px;
 }
+header li a:hover {
+  text-shadow: 2px 2px 3px rgba(68, 68, 68, 0.5);
+}
 #hero {
   background-image: url("../Project/hero.jpg");
   height: 700px;
