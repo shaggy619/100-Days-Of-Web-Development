@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Quicksand", sans-serif;
   background: linear-gradient(0deg, rgb(235, 248, 250), rgb(168, 238, 255));
+  color: black;
 }
 #page-logo img {
   height: 120px;
@@ -40,9 +41,58 @@ header li a:hover {
   color: rgb(58, 57, 57);
   background-color: rgb(255, 251, 0);
 }
+main ul {
+  width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  padding: 15px 6px 30px 6px;
+}
 main li img {
-  height: 210px;
+  height: 230px;
   width: 300px;
+}
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+main li h2 {
+  margin: 4px;
+  color: rgb(49, 49, 49);
+}
+main li p {
+  margin-bottom: 6px;
+}
+
+li:nth-of-type(5) {
+  grid-column: 1 / span 2;
+}
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.link {
+  text-align: right;
+}
+.link a {
+  text-decoration: none;
+  padding: 6px 10px;
+  margin-right: 10px;
+  color: rgb(0, 252, 126);
+  font-weight: bold;
+  border-radius: 5px;
+  text-shadow: 0.2px 0.3px 1px rgba(0, 0, 0, 0.5);
+}
+.link a:hover {
+  background-color: rgb(227, 255, 238);
 }
 footer {
   background-color: rgb(49, 49, 49);

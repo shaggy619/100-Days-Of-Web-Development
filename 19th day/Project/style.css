@@ -46,7 +46,7 @@ header li a:hover {
   background-size: cover;
 }
 #hero-content {
-  width: 800px;
+  width: 63%;
   background-color: rgba(51, 47, 47, 0.8);
   text-align: center;
   border-radius: 8px;
@@ -91,8 +91,8 @@ header li a:hover {
 .content img {
   box-shadow: 2px 4px 8px rgb(68, 67, 67);
   border-radius: 8px;
-  height: 250px;
-  width: 350px;
+  width: 100%;
+  object-fit: cover;
 }
 .content {
   margin: 0 20px;
@@ -108,7 +108,7 @@ header li a:hover {
   object-fit: cover;
 }
 #highlights {
-  padding: 20px;
+  padding: 20px 0;
   background: linear-gradient(0deg, rgb(237, 247, 248), rgb(185, 238, 252));
 }
 #highlights h2 {
