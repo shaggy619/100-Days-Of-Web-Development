@@ -86,3 +86,6 @@ footer p {
 code {
   font-size: 15px;
 }
+footer a:hover {
+  box-shadow: 4px 4px 2px #fdaf0647;
+}
