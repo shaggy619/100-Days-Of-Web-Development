@@ -24,13 +24,38 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(30, 30, 30);
-  padding: 1% 2%;
+  padding: 0.6% 2%;
 }
 
 .main-header ul {
   display: flex;
 }
 
-.main-header ul li a {
+.main-header li {
+  margin: 0 1rem;
+}
+.main-header nav ul li a {
   color: white;
+  font-size: 1.1rem;
+}
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+#main-content {
+  width: 50%;
+  margin: 50px auto;
+}
+
+#main-content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#main-content ul li img {
+  height: 10rem;
+  width: 100%;
 }
