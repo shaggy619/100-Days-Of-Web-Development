@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ocr extended";
+  src: url(/Practice/OCRAEXT.TTF);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(48, 37, 110);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  min-height: 100vh;
+}
+
+body::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(232, 92, 50), rgb(254, 40, 75));
+  clip-path: circle(50% at 10% 50%);
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(
+    140% 140% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+  border-top: 1px solid rgba(245, 245, 245, 0.765);
+  border-left: 1px solid rgba(245, 245, 245, 0.667);
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+}
+
+.bank {
+  font-size: 25px;
+  font-family: "Mulish";
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.chip {
+  width: 50px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.connect {
+  width: 50px;
+  position: absolute;
+  top: 100px;
+  left: 90px;
+}
+
+.number {
+  font-family: "ocr extended";
+  font-size: 33px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 90px;
+  left: 30px;
+}
+
+.card-holder {
+  font-family: cursive;
+  font-size: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-transform: uppercase;
+}
+
+.card-holder span {
+  font-size: 14px;
+  font-family: "Mulish";
+}
+
+.card-holder span a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.validity {
+  font-size: 10px;
+  font-family: cursive;
+  position: absolute;
+  bottom: 30px;
+  right: 220px;
+  text-transform: uppercase;
+}
+
+.validity span {
+  font-size: 16px;
+  font-family: "ocr extended";
+}
+
+.visa {
+  width: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
