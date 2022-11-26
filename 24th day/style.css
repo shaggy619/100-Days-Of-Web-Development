@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(38, 38, 38);
+  background-color: rgb(222, 222, 222);
+}
+
+.card {
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 4px rgba(11, 11, 11, 0.059);
+}
+
+.card h1 {
+  font-family: "Zilla Slab";
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+
+.card p {
+  color: rgb(115, 115, 115);
+  margin-bottom: 12px;
+}
+
+.price {
+  font-family: "Zilla Slab";
+  font-weight: bold;
+  background-color: rgba(0, 153, 255, 0.491);
+  color: rgb(58, 58, 58);
+  margin-bottom: 4px;
+}
+
+.card ul {
+  list-style-type: none;
+  text-align: left;
+  color: rgb(83, 82, 82);
+}
+
+.card li {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.card li svg {
+  height: 12px;
+  padding-top: 0px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  font-family: "krub";
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 153, 255);
+  padding: 7px 18px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.062);
+}
+
+.btn a:hover {
+  background-color: aliceblue;
+  color: rgb(0, 153, 255);
+  border: 2px solid rgb(0, 153, 255);
+}
