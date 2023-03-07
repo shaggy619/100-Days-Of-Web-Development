@@ -1,0 +1,146 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#main-header {
+  background-color: rgb(29, 26, 24);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#logo {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#main-header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header nav a {
+  color: orange;
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(207, 135, 1);
+}
+
+.menu {
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+
+#side-drawer ul {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  padding: 3rem 0;
+  display: none;
+}
+
+#side-drawer li {
+  padding: 1rem;
+}
+
+#side-drawer a {
+  font-size: 2rem;
+  color: orange;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 2rem;
+}
+.products {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.food-item {
+  background-color: antiquewhite;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.food-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-content {
+  padding: 0 1rem 1.8rem 1rem;
+  text-align: center;
+}
+
+.btn {
+  background-color: orange;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(221, 132, 34);
+}
+
+@media (max-width: 48rem) {
+  .products ul {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+}

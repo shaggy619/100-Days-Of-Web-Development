@@ -4,55 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <title>Ryzen Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>WebFood</title>
   </head>
   <body>
-    <header class="main-header">
-      <a href="#" id="logo">Ryzen Tech </a>
-      <nav class="navigation-bar">
-        <ul>
-          <li><a href="">Latest Products</a></li>
-          <li><a href="">Orders</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </nav>
-      <a href="#ham">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </header>
-    <aside>
+    <header id="main-header">
+      <a href="#" id="logo">WEBFOOD</a>
       <nav>
         <ul>
-          <li><a href="">Latest Products</a></li>
-          <li><a href="">Orders</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="#">Browse Meals</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </nav>
+      <a href="side-drawer" class="menu">
+        <span></span><span></span><span></span>
+      </a>
+    </header>
+    <aside id="side-drawer">
+      <nav>
+        <ul>
+          <li><a href="#">Browse Meals</a></li>
+          <li><a href="#">Orders</a></li>
         </ul>
       </nav>
     </aside>
     <main>
-      <h1>Our latest Products!</h1>
-      <section id="main-content">
+      <h1>Browse our delicious meal</h1>
+      <section class="products">
         <ul>
-          <li class="items">
-            <img src="../Project/hp 14.jpg" alt="Photo of a computer" />
-
+          <li class="food-item">
             <article>
-              <div class="content">
-                <h2>HP 14</h2>
-                <a href="#" class="link">Order Now!</a>
+              <img src="1.jpeg" alt="dummy text" />
+              <div class="food-content">
+                <h2>Random Dish</h2>
+                <a href="#" class="btn">Order Now</a>
               </div>
             </article>
           </li>
-          <li class="items">
-            <img src="../Project/nitro 5.jpg" alt="Photo of a computer" />
-
+          <li class="food-item">
             <article>
-              <div class="content">
-                <h2>Acer Nitro 5</h2>
-                <a href="#" class="link"> Order Now!</a>
+              <img src="2.jpg" alt="dummy text" />
+              <div class="food-content">
+                <h2>Random Dish</h2>
+                <a href="#" class="btn">Order Now</a>
               </div>
             </article>
           </li>
