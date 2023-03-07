@@ -1,0 +1,94 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#main-header {
+  background-color: rgb(29, 26, 24);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#logo {
+  color: orange;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#main-header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header a {
+  margin: 0 16px;
+}
+
+#main-header nav a {
+  color: orange;
+  font-size: 20px;
+}
+
+#main-header nav a:hover {
+  color: rgb(207, 135, 1);
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 48px;
+}
+.products {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.food-item {
+  background-color: antiquewhite;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.food-item img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-content {
+  padding: 0 16px 30px 16px;
+  text-align: center;
+}
+
+.btn {
+  background-color: orange;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(221, 132, 34);
+}

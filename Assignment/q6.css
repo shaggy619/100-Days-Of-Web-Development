@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../Assignment/1609228404_1011545475_vc\ building.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 120%;
+}
+
+.logo a img {
+  height: 120px;
+  padding-top: 12px;
+  margin-left: -43px;
+}
+
+main {
+  width: 800px;
+  height: 350px;
+  background-color: rgba(46, 46, 46, 0.728);
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  color: white;
+  font-family: sans-serif;
+}
+
+main h1 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: rgb(255, 10, 10);
+}
+
+main p {
+  font-size: 20px;
+  padding-bottom: 8px;
+  color: rgb(0, 72, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.715);
+}
+
+main ul {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
