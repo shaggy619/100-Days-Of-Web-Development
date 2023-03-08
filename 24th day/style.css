@@ -1,78 +1,169 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  color: rgb(38, 38, 38);
-  background-color: rgb(222, 222, 222);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
 }
 
-.card {
-  margin: 0 auto;
-  width: 250px;
-  text-align: center;
-  background-color: white;
-  padding: 30px;
-  margin-top: 20px;
-  border-radius: 5px;
-  box-shadow: 6px 6px 4px rgba(11, 11, 11, 0.059);
+a {
+  text-decoration: none;
 }
 
-.card h1 {
-  font-family: "Zilla Slab";
-  font-weight: 600;
-  font-size: 24px;
-  padding-bottom: 4px;
-}
-
-.card p {
-  color: rgb(115, 115, 115);
-  margin-bottom: 12px;
-}
-
-.price {
-  font-family: "Zilla Slab";
-  font-weight: bold;
-  background-color: rgba(0, 153, 255, 0.491);
-  color: rgb(58, 58, 58);
-  margin-bottom: 4px;
-}
-
-.card ul {
+ul {
   list-style-type: none;
-  text-align: left;
-  color: rgb(83, 82, 82);
 }
 
-.card li {
-  font-family: sans-serif;
-  font-size: 14px;
+#main-header {
+  background-color: rgb(29, 26, 24);
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
 }
 
-.card li svg {
-  height: 12px;
-  padding-top: 0px;
+#logo {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#main-header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header nav a {
+  color: orange;
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(207, 135, 1);
+}
+
+.menu {
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu span {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  padding: 3rem 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer li {
+  padding: 1rem;
+}
+
+#side-drawer a {
+  font-size: 2rem;
+  color: orange;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+  margin-top: -3rem;
+}
+
+#side-drawer header a {
+  color: white;
+  font-size: 2.4rem;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.products {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.food-item {
+  background-color: antiquewhite;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.food-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-content {
+  padding: 0 1rem 1.8rem 1rem;
+  text-align: center;
 }
 
 .btn {
-  margin-top: 20px;
-}
-
-.btn a {
-  text-decoration: none;
-  font-family: "krub";
-  font-weight: bold;
+  background-color: orange;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
   color: white;
-  background-color: rgb(0, 153, 255);
-  padding: 7px 18px;
-  border-radius: 3px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.062);
+  font-weight: bold;
 }
 
-.btn a:hover {
-  background-color: aliceblue;
-  color: rgb(0, 153, 255);
-  border: 2px solid rgb(0, 153, 255);
+.btn:hover {
+  background-color: rgb(221, 132, 34);
+}
+
+@media (max-width: 48rem) {
+  .products ul {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
 }

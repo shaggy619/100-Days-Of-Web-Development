@@ -4,104 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;600&family=Zilla+Slab:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Card</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>WebFood</title>
   </head>
   <body>
-    <div class="card">
-      <div class="content">
-        <h1>Montly Subscription</h1>
-        <p>Full flexibility across all over courses.</p>
-        <div class="price"><h2>$120</h2></div>
-        <p>Payment on installment. Cancel anytime!</p>
+    <header id="main-header">
+      <a href="#" id="logo">WEBFOOD</a>
+      <nav>
         <ul>
-          <li>
-            <svg
-              version="1.1"
-              id="icons_1_"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0"
-              y="0"
-              viewBox="0 0 128 128"
-              style="enable-background: new 0 0 128 128"
-              xml:space="preserve"
-            >
-              <style>
-                .st0 {
-                  display: none;
-                }
-                .st1 {
-                  display: inline;
-                }
-                .st2 {
-                  fill: #0a0a0a;
-                }
-              </style>
-              <g id="row1_1_">
-                <g id="_x35__2_">
-                  <path
-                    class="st2"
-                    d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm23.2-76.8c-.9-.9-2.3-.9-3.2 0L55.2 73.2 41.4 59.5c-.9-.9-2.3-.9-3.2 0l-4.8 4.8c-.9.9-.9 2.3 0 3.2l15.3 15.3 3.3 3.3.8.8.7.7c.9.9 2.3.9 3.2 0L92 52.5c.9-.9.9-2.3 0-3.2l-4.8-4.8z"
-                    id="error_transparent_copy"
-                  />
-                </g>
-              </g>
-            </svg>
-            40 courses
+          <li><a href="#">Browse Meals</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </nav>
+      <a href="#side-drawer" class="menu">
+        <span></span><span></span><span></span>
+      </a>
+    </header>
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="cross"> &#10006 </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Browse Meals</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Browse our delicious meal</h1>
+      <section class="products">
+        <ul>
+          <li class="food-item">
+            <article>
+              <img src="1.jpeg" alt="dummy text" />
+              <div class="food-content">
+                <h2>Random Dish</h2>
+                <a href="#" class="btn">Order Now</a>
+              </div>
+            </article>
           </li>
-          <li>
-            <svg
-              version="1.1"
-              id="ios7_x5F_arrows_1_"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0"
-              y="0"
-              viewBox="0 0 128 128"
-              style="enable-background: new 0 0 128 128"
-              xml:space="preserve"
-            >
-              <style>
-                .st0 {
-                  display: none;
-                }
-                .st1 {
-                  display: inline;
-                }
-              </style>
-              <g id="_x31_4_1_">
-                <path
-                  d="m64.1 87.9 30.8-30.7-3.9-3.8-24.3 24.3V21.3h-5.3v56.4L37.1 53.4l-3.8 3.8 30.8 30.7zm0-87.9C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7s58.6 26.3 58.6 58.7c-.1 32.4-26.3 58.7-58.6 58.7zm-34.6-24h69.2v-5.3H29.5v5.3z"
-                  id="icon_25_"
-                />
-              </g>
-            </svg>
-            Downloadable
-          </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 128 128"
-              style="enable-background: new 0 0 128 128"
-              xml:space="preserve"
-            >
-              <path
-                style="fill: #262626"
-                d="M61.151 66.65a4.317 4.317 0 0 0-2.17 1.586l-1.555 2.16a4.327 4.327 0 0 1-2.182 1.589l-2.533.814a4.327 4.327 0 0 0-3 4.136l.011 2.661a4.326 4.326 0 0 1-.832 2.571l-1.569 2.148a4.323 4.323 0 0 0 .006 5.107l1.573 2.147c.546.745.839 1.643.837 2.567l-.006 2.661a4.322 4.322 0 0 0 3.004 4.129l2.534.811a4.329 4.329 0 0 1 2.186 1.587l1.559 2.157a4.328 4.328 0 0 0 4.861 1.574l2.527-.835a4.32 4.32 0 0 1 2.7-.002l2.529.829a4.326 4.326 0 0 0 4.857-1.583l1.555-2.16a4.323 4.323 0 0 1 2.182-1.589l2.533-.814a4.327 4.327 0 0 0 3-4.136l-.013-2.661a4.33 4.33 0 0 1 .834-2.571l1.569-2.148a4.325 4.325 0 0 0-.006-5.107l-1.573-2.147a4.321 4.321 0 0 1-.837-2.567l.005-2.661a4.32 4.32 0 0 0-3.004-4.129l-2.533-.811a4.339 4.339 0 0 1-2.189-1.586l-1.557-2.158a4.328 4.328 0 0 0-4.861-1.574l-2.526.835a4.327 4.327 0 0 1-2.7.002l-2.529-.829a4.314 4.314 0 0 0-2.687-.003zm2.019 6.196c7.719-2.516 16.051 1.72 18.567 9.439 2.516 7.719-1.719 16.054-9.439 18.569-7.719 2.516-16.052-1.723-18.568-9.442-2.515-7.718 1.721-16.05 9.44-18.566zm1.191 25.542a.754.754 0 0 1-.622-.11.753.753 0 0 1-.313-.549l-.601-7.424-6.88-2.853a.761.761 0 0 1-.458-.685c0-.291.188-.574.457-.687l6.874-2.866.59-7.426a.762.762 0 0 1 .51-.647.762.762 0 0 1 .794.222l4.852 5.653 7.241-1.734a.764.764 0 0 1 .775.284.76.76 0 0 1 .034.825l-3.877 6.359 3.888 6.352a.762.762 0 0 1-.032.825.763.763 0 0 1-.774.287l-7.248-1.722-4.84 5.661a.738.738 0 0 1-.37.235zm-3.293 10.424-1.892 18.469a.682.682 0 0 0 .348.645c.229.121.529.09.73-.072l8.036-6.495 6.485 1.814a.678.678 0 0 0 .634-.151.675.675 0 0 0 .196-.62l-3.51-13.535a9.287 9.287 0 0 1-1.947-.498 5.93 5.93 0 0 0-.226-.112l-.024-.012c-1.133-.517-2.446-.659-3.637-.236-1.585.747-3.477 1.196-5.193.803zm24.994-8.142c-1.347 1.787-3.764 1.976-5.668 2.846-1.389.893-2.07 2.531-3.203 3.713l7.243 15.876a.676.676 0 0 0 .524.386.679.679 0 0 0 .601-.251l4.17-5.287 10.32.513a.683.683 0 0 0 .633-.372.68.68 0 0 0-.099-.726L86.062 100.67zm.843-37.384H40.134a1.518 1.518 0 1 1 0-3.036h46.772a1.518 1.518 0 1 1-.001 3.036zm0-9.111H40.134a1.518 1.518 0 1 1 0-3.036h46.772a1.518 1.518 0 1 1-.001 3.036zm0-9.11H40.134a1.518 1.518 0 1 1 0-3.036h46.772a1.518 1.518 0 1 1-.001 3.036zm0-9.111H40.134a1.518 1.518 0 1 1 0-3.036h46.772a1.518 1.518 0 1 1-.001 3.036zm11.889-15.87L78.71.881A3.225 3.225 0 0 0 76.569 0H30.444c-.835 0-1.67.349-2.247.941a3.185 3.185 0 0 0-.941 2.247v90.17c0 .835.349 1.655.941 2.247a3.185 3.185 0 0 0 2.247.941h17.973a4.505 4.505 0 0 1-.213-1.367l.015-2.657c0-.835-.243-.041-.699-.739H32.019V4.763h42.915v17.614c0 .835.739 1.574 1.574 1.574h18.51v67.833H89.46a4.23 4.23 0 0 0-.683 2.323l.015 1.043c0 .486-.076.957-.213 1.397h8.013c.835 0 1.67-.349 2.262-.941a3.262 3.262 0 0 0 .926-2.247V22.513c-.09-.941-.424-1.882-.986-2.429zm-19.097-.881V9.167l10.462 10.037H79.697z"
-              />
-            </svg>
-            Cerificate
+          <li class="food-item">
+            <article>
+              <img src="2.jpg" alt="dummy text" />
+              <div class="food-content">
+                <h2>Random Dish</h2>
+                <a href="#" class="btn">Order Now</a>
+              </div>
+            </article>
           </li>
         </ul>
-        <div class="btn">
-          <a href="www.goole.com">Join now</a>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
