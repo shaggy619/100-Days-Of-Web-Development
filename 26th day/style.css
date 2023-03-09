@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(228, 228, 228);
+}
+
+form {
+  width: 30%;
+  margin: 4rem auto;
+  background-color: white;
+  border-radius: 5px;
+  height: 30rem;
+  padding: 0 3rem;
+}
+
+input {
+  width: 80%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+button {
+  display: block;
+}
