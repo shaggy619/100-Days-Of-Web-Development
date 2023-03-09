@@ -42,6 +42,8 @@ form {
 .normal-input input:focus {
   background-color: rgb(242, 229, 255);
   color: rgb(56, 17, 56);
+  outline: none;
+  border-color: blueviolet;
 }
 
 .radio-input h2 {
