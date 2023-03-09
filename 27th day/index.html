@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>HTML Form</h1>
+      <div class="normal-input">
+        <label for="username">Enter Your Name:</label>
+        <input type="text" name="user-name" id="username" />
+        <label for="password">Enter Your Password:</label>
+        <input type="password" name="password" id="password" />
+        <label for="useremail">Enter Your Email:</label>
+        <input type="email" name="user-email" id="useremail" />
+        <label for="phone">Enter Your Age: </label>
+        <input type="number" step="1" name="phone-number" id="phone" />
+        <label for="date">Enter Your Birth Date:</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <hr />
+      <div class="radio-input">
+        <h2>Choose Your Gender:</h2>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="Other" />
+        <label for="other">Other</label>
+      </div>
+      <div class="btn"><button>Submit</button></div>
+    </form>
+  </body>
+</html>
