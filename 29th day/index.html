@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form>
+        <section id="details">
+          <h2>How can we help you?</h2>
+          <label for="username">Your Name</label>
+          <input type="text" id="username" name="username" required />
+          <label for="email">Your E-Mail Address</label>
+          <input type="email" id="email" name="useremail" required />
+          <label for="phone">Your Phone Number</label>
+          <input type="number" name="phone" id="phone" required />
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="6"></textarea>
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Linkedin">Linkedin</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+        <section id="reply">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="reply"
+                id="call"
+                value="call"
+                required
+              />
+              <label for="call">Call Me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="reply"
+                id="email"
+                value="email"
+                required
+              />
+              <label for="email">Send me an email</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="reply"
+                id="no-reply"
+                value="no-reply"
+                required
+              />
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+          <div class="terms">
+            <input type="checkbox" id="accept" name="terms" required />
+            <label for="accept">Accept Terms</label>
+          </div>
+        </section>
+        <section id="btn">
+          <button type="reset" id="btn1">Clear</button>
+          <button type="submit" id="btn2">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
