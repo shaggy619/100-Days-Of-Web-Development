@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form>
+      <h1>HTML Form</h1>
+      <section>
+        <div class="normal-input">
+          <label for="username">Enter Your Name:</label>
+          <input type="text" name="user-name" id="username" required />
+          <label for="password">Enter Your Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="6"
+            maxlength="20"
+            placeholder="Password must be between 6 to 20 characters"
+          />
+          <label for="useremail">Enter Your Email:</label>
+          <input
+            type="email"
+            name="user-email"
+            id="useremail"
+            required
+            placeholder="example@gmail.com"
+          />
+          <label for="phone">Enter Your Age: </label>
+          <input
+            type="number"
+            step="1"
+            name="phone-number"
+            id="phone"
+            required
+          />
+          <label for="date">Enter Your Birth Date:</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+      </section>
+      <hr />
+
+      <section>
+        <div class="radio-input">
+          <h2>Choose Your Gender:</h2>
+          <input type="radio" name="gender" id="male" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" required />
+          <label for="other">Other</label>
+        </div>
+        <div class="province">
+          <label for="province">Select Your Province:</label>
+          <select name="province" id="province">
+            <option value="1">Province 1</option>
+            <option value="2">Province 2</option>
+            <option value="3">Province 3</option>
+            <option value="4">Province 4</option>
+            <option value="5">Province 5</option>
+            <option value="6">Province 6</option>
+            <option value="7">Province 7</option>
+          </select>
+        </div>
+        <div class="find-us">
+          <h2>How did you find us?</h2>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="find-us"
+                id="find-us"
+                value="facebook"
+              />
+              <label for="find-us">Facebook</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="find-us"
+                id="find-us"
+                value="instagram"
+              />
+              <label for="find-us">Instagram</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="find-us"
+                id="find-us"
+                value="youtube"
+              />
+              <label for="find-us">YouTube</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="find-us"
+                id="find-us"
+                value="other"
+              />
+              <label for="find-us">Other</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <label for="message">Any Queries?</label> <br />
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            placeholder="Enter Your Message Here..."
+          ></textarea>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms">I agree to the terms and condition!</label>
+        </div>
+      </section>
+
+      <section>
+        <div class="btn"><button>Submit</button></div>
+      </section>
+    </form>
+  </body>
+</html>

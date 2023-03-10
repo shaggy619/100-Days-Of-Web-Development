@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(44, 44, 44);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: whitesmoke;
+  width: 35rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.normal-input {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.normal-input input,
+.province select,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: inherit;
+  color: rgb(100, 100, 100);
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.normal-input input:focus,
+textarea:focus {
+  background-color: rgb(242, 229, 255);
+  color: rgb(56, 17, 56);
+  outline: none;
+  border-color: blueviolet;
+}
+
+.province select:focus {
+  border-color: blueviolet;
+}
+
+.radio-input {
+  margin-bottom: 1.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(155, 155, 155);
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 1rem 0 0.2rem 0;
+}
+
+.radio-input label {
+  padding-right: 1.5rem;
+}
+
+.radio-input input {
+  cursor: pointer;
+}
+
+.find-us {
+  margin-bottom: 1.2rem;
+}
+
+button {
+  background-color: rgb(136, 9, 255);
+  padding: 0.8rem 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn {
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(164, 66, 255);
+}
