@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(187, 187, 187);
+}
+
+#main-content {
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 4px;
+  margin: 5rem auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+#no-scroll {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#scroll {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
