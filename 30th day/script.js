@@ -4,7 +4,7 @@ let userName = "Samyam";
 //another way to create variable
 let demoName;
 demoName = "Dummy Text";
-//for numeric value we don't use "" sing
+//for numeric value we don't use "" sign
 let age = 21;
 alert(userName);
 alert(age);
