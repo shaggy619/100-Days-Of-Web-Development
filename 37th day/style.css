@@ -44,3 +44,7 @@ main button {
   font-size: 1rem;
   font-family: "Poppins";
 }
+
+#first-paragraph.blue {
+  background-color: rgb(133, 133, 255);
+}
