@@ -59,8 +59,8 @@ input.warning {
   background-color: rgba(255, 0, 0, 0.249);
 }
 
-.normal {
-  background-color: rgb(250, 252, 237);
+input.error {
+  background-color: rgba(255, 0, 0, 0.7);
 }
 
 .gray {

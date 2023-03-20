@@ -6,12 +6,15 @@ function charCount() {
   let length = inputElement.value.length;
   remainingCharacter = maxLength - length;
   remainingChars.textContent = remainingCharacter;
-  if (remainingCharacter <= 10) {
+  if (remainingCharacter === 0) {
+    inputElement.classList.add("error");
+  } else if (remainingCharacter <= 10) {
     remainingChars.style.color = "red";
-    inputElement.className = "warning";
+    inputElement.classList.add("warning");
+    inputElement.classList.remove("error");
   } else {
     remainingChars.style.color = "green";
-    inputElement.className = "normal";
+    inputElement.classList.remove("warning", "error");
   }
 }
 inputElement.addEventListener("input", charCount);
