@@ -58,15 +58,15 @@ function numberOfDiceRolls() {
   let numberOfRolls = 0;
   while (!hasRolledTarget) {
     const rolledNumber = rollDice();
-    // if (rolledNumber == enteredNumber) {
-    //   hasRolledTarget = true;
-    // }
-    //OR
     numberOfRolls++;
     const newRollList = document.createElement("li");
     const outputTExt = "Rolls" + numberOfRolls + ": " + rolledNumber;
     newRollList.textContent = outputTExt;
     diceRollList.append(newRollList);
+    // if (rolledNumber == enteredNumber) {
+    //   hasRolledTarget = true;
+    // }
+    //OR
     hasRolledTarget = rolledNumber == enteredNumber;
   }
   const outputTotalRolls = document.getElementById("output-total-rolls");
