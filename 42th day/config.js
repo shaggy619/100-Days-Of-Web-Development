@@ -1,7 +1,7 @@
 function openPlayerConfig(event) {
   overlayElement.style.display = "block";
   backdropElement.style.display = "block";
-  const selectedPlayer = +event.target.dataset.playerid;
+  const selectedPlayer = +event.target.dataset.playerid; //We need to first use data attribute in HTML file and give it a name and then we can use dataset property.
   editedPlayer = selectedPlayer;
 }
 
@@ -14,9 +14,9 @@ function closeOverlay() {
 }
 
 function savePlayerConfig(event) {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  const enteredPlayerName = formData.get("playername").trim();
+  event.preventDefault(); //Prevents the default behaviour of the submit button
+  const formData = new FormData(formElement);
+  const enteredPlayerName = formData.get("playername").trim(); //get() keyword is used to get the value from FormData which can be extracted using the name attribute used in input field.
 
   if (!enteredPlayerName) {
     document.getElementById("form-control").classList.add("error");
