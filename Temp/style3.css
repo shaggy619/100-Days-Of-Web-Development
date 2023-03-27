@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(40, 40, 40);
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+}
+
+ul li {
+  padding-right: 1rem;
+}
+
+ul li a {
+  font-size: 1rem;
+  border-bottom: 2px solid blue;
+  border-radius: 100%;
+}

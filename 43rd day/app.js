@@ -1,4 +1,5 @@
 let editedPlayer = 0;
+let activePlayer = 0;
 
 const players = [
   {
@@ -28,3 +29,21 @@ cancelButton.addEventListener("click", closeOverlay);
 backdropElement.addEventListener("click", closeOverlay);
 
 formElement.addEventListener("submit", savePlayerConfig);
+
+const startNewGameBtn = document.getElementById("new-game");
+startNewGameBtn.addEventListener("click", startNewGame);
+
+const activeGame = document.getElementById("active-game");
+const activeGameField = document.querySelectorAll("#active-game li");
+
+for (const field of activeGameField) {
+  field.addEventListener("click", selectedGame);
+}
+
+const activePlayerName = document.getElementById("active-player-name");
+
+const gameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
