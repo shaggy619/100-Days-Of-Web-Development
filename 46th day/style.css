@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(60, 61, 68);
+  color: white;
+}
+#slider img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+#slider {
+  margin: 0 auto;
+}
+
+.logo-border {
+  border: 2px solid white;
+  padding: 0 1rem;
+}
+
+.header-style {
+  height: 4.5rem;
+}
+
+#text-content h2 {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+#text-content p {
+  padding: 0.5rem 4rem;
+}
+
+/* Parallax Page */
+
+#main-heading {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.parallax-image {
+  max-width: 50rem;
+}
+
+#image-section {
+  text-align: center;
+}
