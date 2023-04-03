@@ -22,22 +22,22 @@ header {
   position: relative;
 }
 
-ul {
+nav ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-li {
+nav li {
   padding: 0 10px;
 }
 
-li a {
+nav li a {
   text-decoration: none;
   color: rgb(52, 52, 52);
 }
 
-li a:hover {
+nav li a:hover {
   color: #6c63ff;
 }
 
@@ -60,11 +60,12 @@ li a:hover {
   margin: auto;
 }
 
-img {
+#first-content img {
   width: 400px;
 }
 
-p {
+header p,
+main p {
   padding: 10px 0;
   margin-bottom: 10px;
 }
@@ -95,4 +96,60 @@ p {
   border: 2px solid #6c63ff;
   border-radius: 4px;
   padding: 30px 0;
+}
+
+#about-us {
+  display: flex;
+  background-color: rgb(245, 245, 245);
+  padding: 30px 80px;
+}
+
+.about-us-content {
+  margin: auto;
+}
+
+#about-us p {
+  padding-right: 30px;
+}
+
+#about-us img {
+  width: 350px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.404);
+}
+
+footer {
+  background-color: rgb(36, 36, 36);
+  color: rgb(148, 148, 148);
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.slogn {
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+#footer-content {
+  text-align: center;
+}
+
+#footer-icons ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-icons li {
+  padding: 0 25px;
+}
+
+#footer-icons li img {
+  width: 30px;
+  opacity: 0.5;
+}
+
+#copyright {
+  margin-top: 10px;
+  text-align: center;
 }
