@@ -95,7 +95,7 @@ main p {
 .box {
   border: 2px solid #6c63ff;
   border-radius: 4px;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 #about-us {
@@ -152,4 +152,99 @@ footer {
 #copyright {
   margin-top: 10px;
   text-align: center;
+}
+
+#services-list {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  text-align: center;
+  margin: 50px auto;
+  align-items: center;
+}
+
+#doctors-content {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(245, 245, 245);
+}
+
+#doctors-content h2 {
+  margin-bottom: 10px;
+  display: inline;
+  border-bottom: 2px dashed rgb(36, 36, 36);
+}
+
+#doctors-content p {
+  padding: 20px 180px;
+}
+
+.doctors-profile {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.doctors-profile img {
+  width: 300px;
+}
+
+.doctors-profile-content {
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.doctors-profile-content h2 {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+#btn {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+#btn a {
+  text-decoration: none;
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+#btn a:hover {
+  background-color: #473eff;
+}
+
+.blog-content {
+  margin: 0 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.208);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.blog-content img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content h2 {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+#first-content a {
+  text-decoration: none;
+}
+
+.blogs a {
+  text-decoration: none;
+  color: rgb(36, 36, 36);
 }
