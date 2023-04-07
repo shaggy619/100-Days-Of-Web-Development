@@ -42,3 +42,8 @@ app.get("/users", function (request, response) {
 });
 
 app.listen(3000);
+
+//NODEMON
+//To install nodemon, we need to write the "npm install nodemon --save-dev" command in the terminal.
+//After the installation, we need to add "start": "nodemon app.js" text to scripts object of the package.json file.
+//We can thenafter use nodemon by writing "npm start" in the terminal.
