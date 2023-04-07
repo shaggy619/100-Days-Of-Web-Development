@@ -29,4 +29,16 @@ app.post("/user-details", function (request, response) {
   response.send("<h1>Username Submitted!</h1>");
 });
 
+app.get("/users", function (request, response) {
+  const filePath = path.join(__dirname, "data", "user-details.json"); //Sets the path of the folder and the file present in it.
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
+  let allUsers = "<ul>";
+  for (const user of existingUsers) {
+    allUsers += "<li>" + user + "</li>";
+  }
+  allUsers += "</ul>";
+  response.send(allUsers);
+});
+
 app.listen(3000);
