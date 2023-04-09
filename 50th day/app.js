@@ -47,4 +47,4 @@ app.get("/restaurants", function (request, response) {
   });
 });
 
-app.listen(3002);
+app.listen(3000);
