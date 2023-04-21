@@ -18,7 +18,8 @@
       <p>We found <%= numberOfRestaurants %> restaurants.</p>
       <ul id="restaurants-list">
         <% for (const restaurant of restaurants) {%> <%-
-        include("includes/restaurants/restaurants-data") %> <% } %>
+        include("includes/restaurants/restaurants-data", {restaurant :
+        restaurant}) %> <% } %>
       </ul>
       <% } %>
     </main>
