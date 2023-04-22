@@ -52,7 +52,7 @@ app.get("/restaurants", function (request, response) {
 
 app.get("/restaurants/:id", function (request, response) {
   const restaurantId = request.params.id;
-  response.render("restaurant-detail", { rid: restaurantId });
+  response.render("restaurant-details", { rid: restaurantId });
 });
 
 app.listen(3000);
